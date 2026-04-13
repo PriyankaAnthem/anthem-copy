@@ -95,7 +95,8 @@ export async function POST(req) {
       "Sorry, I couldn't generate a response. Please try again.";
 
     return NextResponse.json({ reply });
-  } catch (error) {
+  } catch (error) 
+  {
     console.error("Chat API error:", error);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
